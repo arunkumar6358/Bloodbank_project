@@ -1,0 +1,111 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav{
+    background-color: chocolate;
+    font-size: 28px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: darkslateblue; 
+    position: sticky;
+}  
+nav li{
+    display: inline-block;
+    margin:0 8px;
+}
+nav a{
+    text-decoration: none;
+}
+.logo{
+    font-size: 36px;
+    font-weight: bolder;
+}
+nav a:hover{
+    color: whitesmoke;
+}
+.menubar{
+    display: none;
+}
+@media all and (max-width:1150px){
+    nav{
+        flex-direction: column;
+    }
+    nav a{
+        margin-left: 20px;
+    }
+    nav li{
+        display: block;
+        padding: 10px 0;
+    }
+    ul{
+        text-align: center;
+        padding: 0;
+        display: none;
+    }
+    .logo{
+        align-self: flex-start;
+        margin: 10px 0px 30px;
+    }
+    .menubar{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top:5px;
+    }
+    .showmenu{
+        display: block;
+    }
+}
+#slideshow img {
+    width: 950px;
+    height: 380px;
+    margin:20px auto;
+    position: cover;
+    max-width: 100%;
+    display: none;
+  } 
+#slideshow img.active {
+    display: block;
+  }    
+#bodypart{
+    margin-top:20px;
+    text-align: justify;
+}
+
+#footerpart{
+    width: 100vw;
+    height: 25vh;
+    background-color: chocolate;
+}
+#footerpart>p{
+    padding-top: 80px;
+    color: white;
+    text-align: center;
+}
+.scrolltop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 35px;
+    border: 5px solid #fff;
+    transition: all 0.5s ease 0s;
+}
+.scrolltop:hover{
+    background-color: #f7f7f7;
+    color: #000;
+    border: 5px solid #000;
+    font-weight: bold;
+
+}

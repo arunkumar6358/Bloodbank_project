@@ -1,0 +1,5 @@
+&#x2630; - menubar hex value
+&uarr; - arrow up symbol
+display:flex; -- ore row la varadhuku (like banner)
+display: block; -- using to content display nextline and to display the content also
+align-self: flex-start; -- to the content fully left
